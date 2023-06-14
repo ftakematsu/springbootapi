@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(
+				function () {
+					$.ajax({
+						url: "http://localhost:8081/api/usuario/",
+						method: "GET"
+					}).then(function (data, status, info) {
+						console.log(data);
+					});
+				}
+			)
+		</script>
+	</body>
+</html>
