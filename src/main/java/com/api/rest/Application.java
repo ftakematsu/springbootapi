@@ -22,6 +22,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 @RestController
 @EnableAutoConfiguration
+@EnableCaching
 public class Application implements WebMvcConfigurer {
 	
 	public static void main(String[] args) {

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -30,6 +31,7 @@ public class UsuarioController {
 	private UsuarioRepository usuarioRepository;
 	
 	@GetMapping(value="v1/hello", produces="application/json")
+	@Cacheable("cacheuser")
 	public ResponseEntity<?> init() throws InterruptedException {
 		Thread.sleep(6000); // Cria um delay (6s)
 		return new ResponseEntity<String>("Hello World", HttpStatus.OK);
