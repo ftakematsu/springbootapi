@@ -9,6 +9,8 @@
 - Spring Tools Suite (Eclipse): https://spring.io/tools
   - Será baixado um arquivo JAR. Basta executá-lo que a pasta do Spring Tools Suite será descompactado. Em seguida, basta ir na pasta extraída e executar o arquivo SpringToolSuite4.
 - Laragon (para poder executar o MySQL): [https://www.postgresql.org/download/windows/](https://laragon.org/download/index.html)
+  - Inicialmente, o acesso ao banco de dados é root e sem senha.
+  - Alterar a senha do root: ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyN3wP4ssw0rd'; flush privileges;
 - Apache Maven (Windows): https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.zip
   - Configura as variáveis MAVEN_PATH (raiz) e PATH (/bin).
 - Postman: https://www.postman.com/
