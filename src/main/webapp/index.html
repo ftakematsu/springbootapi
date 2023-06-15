@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(
+				function () {
+					$.ajax({
+						url: "http://localhost:8081/api/usuario/1",
+						method: "GET",
+						dataType: 'json',
+						crossDomain: true,
+					  	headers: {
+							"Accept": "application/json",
+					    	"Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY4Njk2MTM3Mn0.ITV4BPUBVJR-ndcX-LNR3DhG_dAl4qo40TqB-D3ueY6mXvmOtMIPcCIa480ShTAd0ESP8MvC1GL_sh14StWzcQ"
+					  	}
+					}).then(function (data, status, info) {
+						console.log(data);
+					});
+				}
+			)
+		</script>
+	</body>
+</html>

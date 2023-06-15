@@ -33,7 +33,7 @@ public class UsuarioController {
 	@GetMapping(value="v1/hello", produces="application/json")
 	@Cacheable("cacheuser")
 	public ResponseEntity<?> init() throws InterruptedException {
-		Thread.sleep(6000); // Cria um delay (6s)
+		Thread.sleep(10000); // Cria um delay (6s)
 		return new ResponseEntity<String>("Hello World", HttpStatus.OK);
 	}
 	

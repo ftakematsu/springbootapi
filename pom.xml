@@ -12,7 +12,7 @@
 	<artifactId>springbootapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springbootapi</name>
-	<description>Exemplo de microsserviços em Spring Boot.</description>
+	<description>Exemplo de microsserviços em Spring Boot. </description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
